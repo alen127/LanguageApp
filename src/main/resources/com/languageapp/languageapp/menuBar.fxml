@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19"
+         fx:controller="com.languageapp.languageapp.MenuBarController">
+    <menus>
+        <Menu mnemonicParsing="false" text="Play">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#playQuiz" text="Quiz"/>
+                <MenuItem mnemonicParsing="false" onAction="#playFlashcards" text="Flashcards"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#viewDictionary" text="Dictionary"/>
+                <MenuItem mnemonicParsing="false" onAction="#viewWelcomeScreen" text="Welcome page"/>
+            </items>
+        </Menu>
+        <Menu fx:id="manageMenu" mnemonicParsing="false" text="Manage">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#manageQuiz" text="Quiz"/>
+                <MenuItem mnemonicParsing="false" onAction="#manageFlashcards" text="Flashcards"/>
+                <MenuItem mnemonicParsing="false" onAction="#manageDictionary" text="Dictionary"/>
+                <MenuItem mnemonicParsing="false" onAction="#manageUsers" text="Users"/>
+                <MenuItem mnemonicParsing="false" onAction="#viewChangelog" text="Changelog"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

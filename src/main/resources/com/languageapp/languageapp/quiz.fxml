@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19"
+            fx:controller="com.languageapp.languageapp.QuizController">
+    <top>
+        <Text fx:id="prompt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER"
+              BorderPane.alignment="CENTER">
+            <font>
+                <Font size="36.0"/>
+            </font>
+            <BorderPane.margin>
+                <Insets top="15.0"/>
+            </BorderPane.margin>
+        </Text>
+    </top>
+    <center>
+        <HBox fx:id="root" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonA" mnemonicParsing="false" text="Button">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="buttonB" mnemonicParsing="false" text="Button">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="buttonC" mnemonicParsing="false" text="Button">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="buttonD" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                        text="Button">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

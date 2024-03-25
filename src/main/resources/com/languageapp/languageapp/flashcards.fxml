@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.languageapp.languageapp.FlashcardsController">
+    <center>
+        <VBox alignment="TOP_CENTER">
+            <children>
+                <StackPane fx:id="stackPane" VBox.vgrow="ALWAYS">
+                    <children>
+                        <BorderPane fx:id="backPane" prefHeight="200.0" prefWidth="200.0">
+                            <top>
+                                <Text fx:id="typeTextBack" strokeType="OUTSIDE" strokeWidth="0.0" text="Translation">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Text>
+                            </top>
+                            <center>
+                                <Text fx:id="mainTextBack" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font size="48.0" />
+                                    </font>
+                                </Text>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="frontPane" prefHeight="200.0" prefWidth="200.0">
+                            <top>
+                                <Text fx:id="typeTextFront" strokeType="OUTSIDE" strokeWidth="0.0" text="Word">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Text>
+                            </top>
+                            <center>
+                                <Text fx:id="mainTextFront" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font size="48.0" />
+                                    </font>
+                                </Text>
+                            </center>
+                        </BorderPane>
+                    </children>
+                </StackPane>
+                <Text fx:id="counterText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <fx:include source="menuBar.fxml" />
+    </top>
+    <left>
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#previousFlashcard" text="&lt;" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Button fx:id="forwardButton" mnemonicParsing="false" onAction="#nextFlashcard" text="&gt;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </Button>
+    </right>
+</BorderPane>
