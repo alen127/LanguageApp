@@ -1,5 +1,5 @@
 # About
-A simple language learning java application created for one of my university classes.
+A simple language learning desktop application created using Java and JavaFX for one of my university classes.
 The project required that we store the users in a text file to illustrate how much easier it is to work with a database, obviously if that was not the case the logical thing to do would be to store them in the database.
 
 # Running the app
