@@ -1,0 +1,13 @@
+services:
+  h2:
+    image: oscarfonts/h2:2.1.210
+    container_name: h2
+    ports:
+      - 1521:1521 # TCP database server
+      - 81:81 # web interface
+    volumes:
+      - languageapp-db:/opt/h2-data
+    environment:
+      - H2_OPTIONS=-ifNotExists
+volumes:
+  languageapp-db:
