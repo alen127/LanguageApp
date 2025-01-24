@@ -1,17 +1,34 @@
 # About
 A simple language learning desktop application created using Java and JavaFX for one of my university classes.
-The project required that we store the users in a text file to illustrate how much easier it is to work with a database, obviously if that was not the case the logical thing to do would be to store them in the database.
 
 # Running the app
-Run `mvn clean install` to install all the neccessary dependencies.
-After that, run the installed h2 database and execute the sql script provided in the repository to insert some data.
-Adjust the variables in the `dat/database.properties` file and run `mvn javafx:run` to start the application.
-You can login with 2 user accounts:
+
+## Setting up the database
+
+1. Run `docker compose up -d` from the root directory of the project.
+
+2. Open http://localhost:81 and click **Connect** (or select embedded mode and adjust the jdbc url in the [properties file](dat/database.properties))
+
+3. Copy and paste the contents of [this sql script](export_202403251640.sql) into the empty field and click **Run**
+
+
+## Running the desktop application
+
+1. Run `mvn clean install` to install all the neccessary dependencies.
+
+2. Run `mvn javafx:run`
+
+## Logging in
+
+Two accounts are created by default: **admin** and **regular**
+
+### Logging in as admin
 ```
   username: admin
   password: admin
 ```
-and
+
+### Logging in as a regular user
 ```
   username: regular
   password: regular
