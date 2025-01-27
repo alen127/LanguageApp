@@ -1,5 +1,5 @@
 # About
-A simple language learning desktop application created using Java and JavaFX for one of my university classes.
+A simple language learning desktop application created using JavaFX and an H2 database for one of my university classes. Users add words and their translations and then can flip through flashcards or play a quiz.
 
 # Running the app
 
